@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+    app:cardCornerRadius="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+
+            <TextView
+                android:id="@+id/beer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_image"
+                android:layout_toEndOf="@id/iv_image"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Beer Name" />
+
+            <TextView
+                android:id="@+id/beer_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_image"
+                android:layout_toEndOf="@id/iv_image"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/beer_name"
+                android:text="Description" />
+
+            <TextView
+                android:id="@+id/beer_alcol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_image"
+                android:layout_toEndOf="@id/iv_image"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/beer_desc"
+                android:text="Alcol %" />
+
+            <TextView
+                android:id="@+id/beer_ibu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_image"
+                android:layout_toEndOf="@id/iv_image"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/beer_alcol"
+                android:textSize="12sp"
+                android:text="IBU" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

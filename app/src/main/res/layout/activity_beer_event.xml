@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:layout_gravity="center"
+    tools:context=".activities.BeerActivity">
+
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+
+    <TextView
+        android:id="@+id/a_first_brw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15sp"
+        android:layout_below="@id/ImageView"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Description" />
+
+    <TextView
+        android:id="@+id/a_food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15sp"
+        android:layout_below="@id/a_first_brw"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Alcol %" />
+
+    <TextView
+        android:id="@+id/a_brewer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@id/a_food"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:text="IBU" />
+
+</RelativeLayout>
